@@ -1,11 +1,9 @@
-import ToDos from "./ToDos";
-
-import { useState } from "react";
+import CoinTracker from "./CoinTracker";
 
 function App() {
   return (
     <div>
-      <ToDos />
+      <CoinTracker />
     </div>
   );
 }

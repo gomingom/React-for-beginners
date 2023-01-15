@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 function ToDos() {
   const [toDo, setToDo] = useState("");
   const [toDos, setToDos] = useState([]);

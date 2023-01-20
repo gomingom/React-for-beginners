@@ -1,10 +1,18 @@
-import CoinTracker from "./CoinTracker";
-
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./router/Home";
+import Detail from "./router/Detail";
 function App() {
   return (
-    <div>
-      <CoinTracker />
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/movie/:id">
+          <Detail />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
